@@ -1,12 +1,12 @@
 #사용자 정의 함수부
-exchange_rate = 0
+discount_rate = 0
 
 def set_rate(rate) :
-    global exchange_rate
-    exchange_rate = rate*0.01
+    global discount_rate
+    discount_rate = rate*0.01
 
 def get_fixed_price(discount_price) :
-    real_price = discount_price / (1 - exchange_rate)
+    real_price = discount_price / (1 - discount_rate)
     return int(real_price)
 
 #주 프로그램
